@@ -37,6 +37,9 @@
 }
 
 .redirect-sign-up {
+    border: 1px solid rgba(46, 94, 133, 0.123);
+    border-radius: 5px;
+    padding: 4px;
     margin-top: 40px;
     margin-right: 70px;
 }
