@@ -1,8 +1,33 @@
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-login-sign-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.joinLogoanimated {
+    top: 10%;
+    left: 50%;
+    position: absolute;
+    background-color: transparent;
+    width: 15%;
+    height: 15%;
+    opacity: 1;
+    animation: logoShrinkAndMove 3.0s ease forwards;
+    z-index: 2;
+}
+
 @keyframes logoShrinkAndMove {
     0% {
         top: 50%;        /* Vertikal zentriert */
         left: 50%;       /* Horizontal zentriert */
-        transform: translate(-50%, -50%) scale(1);  /* Verschiebung um die Hälfte der eigenen Größe, normale Skalierung */
+        transform: translate(-50%, -50%) scale(1.4);  /* Verschiebung um die Hälfte der eigenen Größe, normale Skalierung */
     }
     100% {
         top: 0;          /* Oben links */
@@ -11,19 +36,22 @@
     }
 }
 
-.header-login-sign-up {
-    display: flex;
-    justify-content: space-between;
+.redirect-sign-up {
+    margin-top: 40px;
+    margin-right: 70px;
 }
 
-.joinLogoanimated {
-    top: 10%;
-    left: 50%;
-    position: absolute;
-    background-color: transparent;
-    width: 120px;
-    height: 120px;
-    opacity: 1;
-    animation: logoShrinkAndMove 2.5s ease forwards;
-    z-index: 2;
+.sign-up-button {
+    padding: 10px 18px;
+    background-color: rgb(69,137,255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 35px;
+    font-weight: bold;
+}
+
+.sign-up-button:hover {
+    cursor: pointer;
+    background-color: rgb(42,54,71);
 }
