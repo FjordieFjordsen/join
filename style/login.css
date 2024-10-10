@@ -4,14 +4,14 @@
 }
 
 .card-login {
-    background-color: rgba(192, 204, 211, 0.164);
+    background-color: rgba(248, 250, 252, 0.103);
     display: flex;
     justify-content: center;
     border-radius: 30px;
     width: 652px;
     height: 493px;
     margin-top: 105px;
-    box-shadow: 0px 0px 10px 0px;
+    box-shadow: 0px 0px 10px -6px;
 }
 
 .login-headline {
