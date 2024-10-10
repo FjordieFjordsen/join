@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/img/join.png">
     <title>Join - Project</title>
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="style/main_style.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/login.css">
 </head>
 <body>
 
@@ -27,7 +29,17 @@
     </header>
 
     <div class="main-content">
-        
+        <div class="card-login">
+            <div class="card-content-login">
+                <div class="headline-login-sign-up">
+                    <h1 class="login-headline">Log in</h1>
+                    <div class="underlineDiv">
+                        <div class="underline"></div>
+                    </div>
+                </div>
+            </div>
+            <form id="loginForm" onsubmit="return handleLogin"></form>
+        </div>
     </div>
     
 </body>
