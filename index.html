@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/img/join.png">
     <title>Join - Project</title>
+    <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/main_style.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/login.css">
@@ -12,6 +13,9 @@
 <body>
 
     <header class="header-login-sign-up">
+        <div class="mobil-image">
+            <img src="assets/img/join.png" alt="">
+        </div>
         <div class="logoContainer">
             <svg class="joinLogoanimated" style="margin-top: 14px;" viewBox="0 0 101 122" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M71.6721 0H49.5143V25.4923H71.6721V0Z" fill="#2A3647"></path>
@@ -23,7 +27,7 @@
             </svg>
         </div>
         <div class="redirect-sign-up">
-            Not a Join User?
+            <h5>Not a Join User?</h5>
             <button onclick="redirect()" class="sign-up-button" >Sign Up</button>
         </div>
     </header>
@@ -37,8 +41,25 @@
                         <div class="underline"></div>
                     </div>
                 </div>
+                <div class="data-container">
+                    <form id="loginForm" onsubmit="return handleLogin">
+                        <input  id="loginEmail" type="email" placeholder="Email" required class="email-input">
+                        <input  id="loginPassword" type="password" placeholder="Password" required class="password-input" onclick="togglePassword('loginPassword')" >
+                    </form>
+                    <div class="remember-container">
+                        <input type="checkbox" id="rememberCheck" class="check-box-remeber">
+                        <label for="rememberMeCheckbox" class="remember-text">Remeber Me</label>
+                    </div>
+                    <div class="login-buttons-container">
+                        <button class="login-button">Log in</button>
+                        <button class="guest-button">Guest Log in</button>
+                    </div>
+                </div>
             </div>
-            <form id="loginForm" onsubmit="return handleLogin"></form>
+        </div>
+        <div class="policy-of-truth">
+            <a href="summary.html" class="privacy">Privacy Policy</a>
+            <a href="#" class="legal">Legal Notiz</a>
         </div>
     </div>
     
