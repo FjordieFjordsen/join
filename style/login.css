@@ -23,6 +23,12 @@
     width: 90%;
     margin-top: 105px;
     box-shadow: 0px 0px 20px -6px;
+    opacity: 0; /* Anfangs unsichtbar */
+    transition: opacity 2s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1; /* Sichtbar nach Einblenden */
 }
 
 .login-headline {
@@ -47,6 +53,7 @@ h1 {
     height: 3px;
     background-color: rgb(41,171,226);
 }
+
 .data-container {
     width: 90%;
     display: flex;
@@ -111,7 +118,7 @@ form {
 .guest-button {
     width: 120px;
     height: 40px;
-    background-color: rgb(224, 228, 231);
+    background-color: rgb(250, 253, 255);
     border-color: rgb(216, 216, 216);
     border-style: solid;
     border-radius: 8px;
